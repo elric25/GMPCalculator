@@ -1,0 +1,63 @@
+<html>
+<head>
+ <title>GMP calculator</title>
+<!-- By elric225#4647 -->
+<img src="logo.jpg" width="15%" height="15%" />
+</head>
+<body>
+</br>
+</br>
+<form name="orderForm" onsubmit="return ProcessInfo();" method="post">
+<table>
+  <tr>
+    <td>Difficulty?</td>
+    <td><select id="Difficulty">
+      <option value="Easy">Easy</option>
+      <option value="Standard">Standard</option>
+      <option value="Semi">SemiPrime</option>
+      <option value="Prime">Prime</option>
+    </select>
+</td>
+  </tr>
+  <tr>
+    <td>
+Advanced?
+    </td>
+    <td> <input type="checkbox" id="Advanced"></input></input>
+    </td>
+  </tr>
+<tr>
+  <td>
+    Other:
+  </td>
+</tr>
+  <tr></tr>
+    <td>
+Coached? <input type="checkbox" id="Coach"></input>
+</td>
+  </tr>
+  <tr>
+    <td>
+    Overflow? <input type="radio" id="Y" name="Overflow" value="2">Normal</input> <input type="radio" id="W" name="Overflow" value="3">Weekend</input></input>
+        </td>
+  </tr>
+<tr>
+  <td>Scheduled?</td>
+  <td>
+    <input type="radio" id="SY" name="Schedule" value="1">Yes</input> <input type="radio" id="S48" name="Schedule" value="3">48 Hours Notice</input>
+  </td>
+</tr>
+
+<tr>
+  <td>Recorded?
+  <input type="checkbox" id="Youtube"></input> CraigBot? <input type="checkbox" id="Craig"></input> Made a lore post? <input type="checkbox" id="Lore"></input>
+</td>
+</tr>
+
+</table>
+</br>
+<input type="submit" name="btnSubmit" id="btnSubmit" value="Calculate">
+<h2 id="Result"></h>
+<script src="code.js"></script>
+</body>
+</html>
